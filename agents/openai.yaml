@@ -1,0 +1,7 @@
+interface:
+  display_name: "Pixel Fantasy Assetgen"
+  short_description: "Generate cohesive side-scroller pixel fantasy assets"
+  icon_small: "./assets/icon-small.png"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#38BDF8"
+  default_prompt: "Use $pixel-fantasy-assetgen to generate a game-ready 2D pixel fantasy asset in the established side-scrolling art style."
