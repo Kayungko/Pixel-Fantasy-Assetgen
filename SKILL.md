@@ -23,6 +23,7 @@ Use image generation directly when the user asks to see an asset. When the user 
 3. Make the asset game-ready:
    - characters should read at small sprite scale
    - scenes should support side-scrolling gameplay readability
+   - environment scenes should apply the high-detail side-scroller style lock before adding theme-specific details
    - when the user provides a reference scene image, treat that image as authoritative for shapes, proportions, palette, lighting, and object list
    - scene deconstruction should split large objects, small props, terrain tiles, and parallax/background pieces into separate sheets
    - never mix large environment objects such as trees and arches with tiny props in the same extraction sheet
@@ -49,6 +50,12 @@ For a daytime forest ruins scene:
 
 ```text
 Original 2D side-scrolling pixel art game environment, bright daytime fantasy forest ruins level, modern detailed pixel art with visible pixels and crisp edges. Wide 16:9 horizontal scene, layered parallax composition: foreground leafy silhouettes, playable grassy platform, mossy stone path, small flowers, midground ancient broken arches and vine-covered pillars, background huge green trees, pale cyan sky, cream clouds, distant ruins in atmospheric haze. Cool teal/blue shadows, fresh greens, warm sunlight highlights, no characters, no UI, no text.
+```
+
+For a stable 16:9 nighttime forest ruins scene:
+
+```text
+Original 16:9 horizontal 2D side-scrolling pixel art game environment, nighttime fantasy forest ruins level. High-detail side-scroller style lock: readable gameplay platform in the lower third, strong foreground/midground/background separation, atmospheric parallax depth, low-contrast distant shapes, crisp playable terrain edge, dark underside shadows, visible square pixels, hard edges, limited palette with 3 to 5 shade levels per material. Use mossy blue-gray stone, fresh grass caps, rounded clustered tree canopies, teal mist, distant pale blue ruin silhouettes, deep navy and muted violet shadows, restrained emerald vegetation, and small warm amber lantern or candle accents. The moon, if present, should be small and atmospheric, not the main subject. No characters, no UI, no text.
 ```
 
 For scene deconstruction into reusable asset sheets:

@@ -36,6 +36,31 @@ Base palette:
 
 Keep each material to roughly 3 to 5 shade levels. Use hard cluster boundaries instead of smooth ramps.
 
+## High-detail Side-scroller Style Lock
+
+Use this lock for environment scenes when the user wants a stable game-ready side-scroller look. Keep the output 16:9 horizontal; do not copy reference screenshot dimensions.
+
+- compose as a playable side-scrolling level, not a standalone illustration
+- place the readable gameplay platform in the lower third
+- make the playable terrain edge crisp, with a brighter top cap and a dark underside
+- separate foreground, midground, and background with clear value and saturation steps
+- keep distant shapes lower contrast and lower saturation than foreground assets
+- use atmospheric parallax depth with mist, haze, or soft color separation between layers
+- preserve visible square pixels, hard edges, and readable blocky pixel clusters
+- use high-detail pixel art: clear large silhouettes with small internal texture clusters
+- use limited palettes per material, usually 3 to 5 shade levels
+- use small local accent lights, such as lanterns, candles, magic sparks, or fireflies
+- avoid UI framing, screenshot overlays, minimaps, health bars, labels, or watermark text
+
+Avoid drifting into:
+
+- generic wallpaper or concept-art composition
+- overly smooth painterly gradients
+- realistic 3D lighting or material rendering
+- flat single-layer backgrounds
+- muddy terrain edges that do not read as playable
+- huge decorative focal objects that steal attention from the level layout
+
 ## Character Rules
 
 Default character target:
@@ -147,8 +172,17 @@ Original 2D side-scrolling pixel art game environment, bright daytime fantasy fo
 Night or dark forest variant:
 
 ```text
-Original 2D side-scrolling pixel art game environment, moonlit fantasy forest ruins level, visible square pixels and crisp edges, layered parallax, dark foreground branches, playable mossy stone platform, violet-blue shadows, teal mist, ancient broken arches, emerald fireflies, small warm lantern accents, no characters, no UI, no text.
+Original 16:9 horizontal 2D side-scrolling pixel art game environment, nighttime fantasy forest ruins level. Apply the high-detail side-scroller style lock: readable gameplay platform in the lower third, crisp mossy terrain edge, dark stone underside shadows, strong foreground/midground/background separation, atmospheric parallax depth, and low-contrast distant shapes. Use mossy blue-gray stone platform with fresh grass cap, broken ancient ruin arches, vine-covered pillars, rounded clustered tree canopies, hazy forest layers, teal mist, distant pale blue ruin silhouettes, deep navy and muted violet shadows, restrained emerald vegetation, and small warm amber lantern or candle accents. The moon, if present, should be small and atmospheric, not the main subject. No characters, no UI, no text.
 ```
+
+Night scene anti-drift rules:
+
+- do not make a giant moon the main focal point
+- do not turn the scene into a generic spooky forest
+- do not use jagged black gothic trees as the dominant foreground language
+- do not use regular castle brick blocks instead of mossy blue-gray ruin stones
+- do not over-saturate the scene with neon blue
+- do not lose the soft layered haze and side-scroller gameplay readability
 
 ## Scene Deconstruction Rules
 

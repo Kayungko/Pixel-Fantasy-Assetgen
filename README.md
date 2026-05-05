@@ -84,6 +84,12 @@ Use $pixel-fantasy-assetgen to create a wizard running animation sprite sheet, 8
 
 ## 场景提示词
 
+### 通用横版场景风格锁
+
+```text
+High-detail side-scroller style lock: keep a 16:9 horizontal playable side-scrolling level composition, not a wallpaper or concept-art scene. Place the readable gameplay platform in the lower third. Use a crisp playable terrain edge with a brighter top cap and dark underside shadows. Separate foreground, midground, and background with clear value and saturation steps. Use atmospheric parallax depth, low-contrast distant shapes, visible square pixels, hard edges, blocky pixel clusters, and limited 3 to 5 shade levels per material. Add only small local accent lights. No UI, no labels, no screenshot overlay.
+```
+
 ### 白天森林遗迹 16:9
 
 ```text
@@ -93,7 +99,15 @@ Use $pixel-fantasy-assetgen to create an original 16:9 horizontal 2D side-scroll
 ### 夜晚森林遗迹 16:9
 
 ```text
-Use $pixel-fantasy-assetgen to create an original 16:9 horizontal 2D side-scrolling pixel art game environment, nighttime fantasy forest ruins level. Layered parallax composition: dark foreground leafy silhouettes, playable mossy stone platform in lower third, moonlit broken arches, vine-covered pillars, deep blue and violet shadows, teal mist between tree layers, small warm lantern accents, emerald fireflies, distant pale blue ruins, dark cyan sky with soft moon glow. No characters, no UI, no text. Strict low-resolution pixel art, visible square pixels, crisp hard edges, limited palette, no smooth gradients, no painterly lighting, no soft blur.
+Use $pixel-fantasy-assetgen to create an original 16:9 horizontal 2D side-scrolling pixel art game environment, nighttime fantasy forest ruins level.
+
+High-detail side-scroller style lock: readable gameplay platform in the lower third, strong foreground/midground/background separation, atmospheric parallax depth, low-contrast distant shapes, crisp playable terrain edge, dark underside shadows, visible square pixels, hard edges, limited palette with 3 to 5 shade levels per material.
+
+Scene content: mossy blue-gray stone platform with fresh grass cap, broken ancient ruin arches and vine-covered pillars in the midground, rounded clustered tree canopies and hazy forest layers in the background, teal mist between layers, distant pale blue ruin silhouettes, dark cyan night sky. Add small warm lantern or candle accents and a few subtle emerald fireflies.
+
+Night scene lock: use deep navy, muted violet, teal mist, blue-gray stone, restrained emerald vegetation, and small warm amber highlights. The moon, if present, must be small and atmospheric, not the main subject.
+
+No characters, no UI, no text. Do not create a generic spooky forest, giant dominant moon, jagged black gothic trees, regular castle brick blocks, neon-blue over-saturation, painterly gradients, soft blur, realistic 3D lighting, or anti-aliased illustration.
 ```
 
 ## 场景拆件提示词
@@ -180,3 +194,4 @@ Make it Unity-ready: fixed equal-size cells, exact grid dimensions, same body ce
 - 真正进 Unity 前，建议二次整理为固定 cell、统一 pivot、统一透明背景。
 - 参考图拆件时，优先拆参考图已有物件；不要让模型自由发明新风格。
 - 大件、小件、地形、远景建议分成不同 sheet 生成，避免大树、拱门等物件被裁切。
+- 第三方游戏截图只适合本地风格分析；公开仓库中应保存原创规则、原创素材和可迁移的文字化风格规范。
